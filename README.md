@@ -24,8 +24,8 @@
 Клонировать репозиторий, создать и активировать виртуальное окружение:
 
 ```sh
-git clone https://github.com/Amaterasq/api_yamdb.git
-cd api_yatube
+git clone https://github.com/master-cim/api_yamdb-master.git
+cd api_yatube-master
 python -m venv venv
 source venv/Scripts/activate
 ```
@@ -35,6 +35,11 @@ source venv/Scripts/activate
 ```
 pip install -r requirements.txt
 ```
+Перейти в папку приложения
+```
+cd cpi_yamdb
+```
+
 
 Выполнить миграции:
 
@@ -46,6 +51,10 @@ python manage.py migrate
 
 ```
 python manage.py dbfill
+```
+Создать суперпользователя
+```
+python manage.py createsuperuser
 ```
 
 Запустить проект:
